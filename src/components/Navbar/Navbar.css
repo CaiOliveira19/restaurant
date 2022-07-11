@@ -1,0 +1,121 @@
+.navbar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-black);
+    color: #ffffffa2;
+    padding: 1rem 2rem;
+}
+
+.navbar-logo{
+    width: 10rem;
+    height: auto;
+}
+.navbar-logo img{
+    width: 10rem;
+}
+
+.nav-links{
+    width:700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section_link {
+    font-family: 2rem;
+    color: #ffffff96;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+    transition: 200ms all ease-in-out;
+  }
+  
+
+.section_link:hover{
+    color: var(--color-white);
+    transform: rotate(20deg)
+}
+.nav-itens{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-loguin{
+    width: 110px;
+    margin-left: 20px;
+    font-size: 1rem;
+    color:#ffffff96;
+    transition: 200ms all ease-in-out;
+}
+
+.nav-loguin:hover {
+    color: var(--color-white);
+    border-bottom: 1px solid #ffffff96;
+}
+
+.nav_cart{
+    margin: 0px 20px;
+    font-size: 1.6rem;
+}
+
+.nav_cart:hover{
+    color: var(--color-white);
+    transform: rotate(20deg);
+}
+
+.navbar-screen{
+    display: none;
+}
+
+.screen-overlay{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    transition: 500ms ease;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.overlay-close{
+    font-size: 2rem;
+    color: var(--color-golden);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+}
+
+.screen-links li{
+    font-size: 1.6rem;
+    margin: 30px 0px;
+    text-align: center;
+    transition: 200ms all ease-in-out;
+}
+
+.screen-links li:hover{
+    color: var(--color-white);
+    transform: rotate(20deg);
+}
+
+@media screen and (max-width: 1250px ) {
+    .nav-links{
+        display: none;
+    }
+
+    .navbar-screen{
+        display: flex;
+    }
+}
+
